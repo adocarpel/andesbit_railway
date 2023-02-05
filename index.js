@@ -9,7 +9,7 @@ const app = express()
 app.set('views',path.join(__dirname, 'views'))
 app.set('view engine','ejs')
 //routes
-app.get('/',(req,res)=>res.render('profile',{cor:g,name:'buan',age:27}))
+app.get('/',(req,res)=>res.render('profile',{name:'uan',age:26}))
 //antes: res.send()
 //app.get('/api/users',(req,res)=>res.json([{name:'ryan'},{name:'juan'}]))
 app.get('/api/users',async (req,res)=>{
